@@ -40,8 +40,8 @@ export default function OrdersPage() {
               // eslint-disable-next-line react/jsx-key
               <tr>
                 <td>{new Date(order.createdAt).toLocaleString()}</td>
-                <td className={order.paid ? "text-green-600" : "text-red-600"}>
-                  {order.paid ? "YES" : "NO"}
+                <td className={order.paid ? "text-red-600 " : "text-green-600"}>
+                  {order.paid ? "NO" : "YES"}
                 </td>
                 <td>
                   {order.name} {order.email}
